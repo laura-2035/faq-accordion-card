@@ -1,0 +1,12 @@
+@import './assets/css/utils.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  @include flexContent();
+  height: 100vh;
+  background: linear-gradient($soft-violet, $soft-blue);
+}
