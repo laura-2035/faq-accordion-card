@@ -1,6 +1,8 @@
 import React from 'react'
 import FAQCardItem from './FAQCardItem.jsx'
 import './FAQCard.scss'
+import {ReactComponent as MainIMG} from '../assets/img/illustration-woman-online-desktop.svg'
+
 const questionAnswer = [
     {
       question: 'How many team members can I invite?',
@@ -29,6 +31,9 @@ export default props => {
     })
     return (
     <div className="faq-wrapper">
+        <div className="faq-img-wrapper">
+          <MainIMG></MainIMG>
+        </div>
        <div className="faq-list">
             {cardList}
         </div>

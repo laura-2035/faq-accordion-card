@@ -6,8 +6,8 @@ export default props => {
         <Fragment>
             <input type="checkbox" id={props.id} className="question-input"/>
             <label className="question" htmlFor={props.id}>{props.faqquestion}
-                <i src="./assets/img/icon-arrow-down.svg"></i>
             </label>
+            <div><p>{props.faqanswer}</p></div>
         </Fragment>
     )
 }

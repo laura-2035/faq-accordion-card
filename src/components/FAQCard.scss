@@ -7,3 +7,7 @@
     border-radius: 25px;
     border: 1px solid $soft-violet;
 }
+.faq-list{
+    @include flexContent(center, center, row);
+    flex-wrap: wrap;
+}

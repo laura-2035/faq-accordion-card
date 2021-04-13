@@ -6,7 +6,7 @@
 }
 
 body{
-  @include flexContent();
+  @include flexContent(center, center, column);
   height: 100vh;
   background: linear-gradient($soft-violet, $soft-blue);
 }
