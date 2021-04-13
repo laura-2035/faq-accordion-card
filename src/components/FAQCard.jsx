@@ -2,6 +2,8 @@ import React from 'react'
 import FAQCardItem from './FAQCardItem.jsx'
 import './FAQCard.scss'
 import {ReactComponent as MainIMG} from '../assets/img/illustration-woman-online-desktop.svg'
+import {ReactComponent as MainIMGMobile} from '../assets/img/illustration-woman-online-mobile.svg'
+import {ReactComponent as BoxIMG} from '../assets/img/illustration-box-desktop.svg'
 
 const questionAnswer = [
     {
