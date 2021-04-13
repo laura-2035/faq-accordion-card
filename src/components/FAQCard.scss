@@ -6,6 +6,8 @@
     background-color: white;
     border-radius: 25px;
     border: 1px solid $soft-violet;
+    @include flexContent(center, center, row);
+    background-image: url('../assets/img/bg-pattern-desktop.svg')
 }
 .faq-list{
     @include flexContent(center, center, row);

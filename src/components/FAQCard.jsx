@@ -34,9 +34,11 @@ export default props => {
     return (
     <div className="faq-wrapper">
         <div className="faq-img-wrapper">
+          <BoxIMG></BoxIMG>
           <MainIMG></MainIMG>
         </div>
        <div className="faq-list">
+       <h1>FAQ</h1>
             {cardList}
         </div>
     </div>
