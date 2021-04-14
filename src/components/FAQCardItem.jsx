@@ -1,13 +1,15 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import './FAQCardItem.scss'
+import arrowDown from '../assets/img/icon-arrow-down.svg'
 export default props => {
     
     return (
-        <Fragment>
-            <input type="checkbox" id={props.id} className="question-input"/>
+        <div className="faq-item">
+            <input type="checkbox" id={props.id} className="toggle"/>
             <label className="question" htmlFor={props.id}>{props.faqquestion}
+            <div className="arrow-icon"><img src={arrowDown}></img></div>
             </label>
-            <div><p>{props.faqanswer}</p></div>
-        </Fragment>
+            <div class="answer"><p>{props.faqanswer}</p></div>
+        </div>
     )
 }

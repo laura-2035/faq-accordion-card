@@ -1,15 +1,103 @@
 @import '../assets/css/utils.scss';
 
 .faq-wrapper{
-    height: 600px;
-    width: 900px;
+    height: 550px;
+    width: 1000px;
     background-color: white;
     border-radius: 25px;
     border: 1px solid $soft-violet;
-    @include flexContent(center, center, row);
-    background-image: url('../assets/img/bg-pattern-desktop.svg')
+    @include flexContent(center, space-around, row);
+    background-image: url('../assets/img/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right 570px bottom -150px;
+    
+    .faq-img-wrapper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .main-img{
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            @include flexContent(center, center, row);
+            svg{
+                transform: scale(1.1);
+                position: relative;
+                left: -60px;
+            }
+        }
+        .box-img{
+            position: relative;
+            z-index: 3;
+            left: -95px;
+            top: -300px
+        }
+        .main-img-mobile{
+            display: none;
+        }
+    }
+    .faq-list{
+        @include flexContent(center, flex-start, row);
+        flex-wrap: wrap;
+        width: 100%;
+        height: 80%;
+        margin-left: 5%;
+        overflow: hidden;
+        h1{
+            width: 80%;
+            color: $title-color;
+            margin-bottom: 20px;
+        }
+        .faq-list-scroll{
+            width: 90%;
+            height: 350px;
+            overflow-y: auto;
+        }
+    }
+
 }
-.faq-list{
-    @include flexContent(center, center, row);
-    flex-wrap: wrap;
+
+@media (max-width: 1100px) {
+   
+    .faq-wrapper{
+        @include flexContent(center, center, column);
+        height: 70vh;
+        min-width: 350px;
+        width: 90vw;
+        background-image: url('../assets/img/bg-pattern-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 250px;
+        background-position: center top;
+        .faq-img-wrapper{
+            @include flexContent(center, center, column);
+            height: 20%;
+            .main-img{
+                display: none;
+            }
+            .box-img{
+                display: none;
+            }
+            .main-img-mobile{
+                display: block;
+                position: relative;
+                top: -70px;
+            }
+        }
+        .faq-list{
+            @include flexContent(center, center, column);
+            
+            h1{
+                text-align: center;
+               
+            }
+            .faq-list-scroll{
+                margin: 0 3%;  
+                width: 100%;  
+            }
+        }
+    }
+    
 }
+

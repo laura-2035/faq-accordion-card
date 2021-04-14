@@ -1,12 +1,30 @@
 @import './assets/css/utils.scss';
 
+@font-face {
+  font-family: 'Kumbh Sans';
+  src: url('./assets/fonts/KumbhSans-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Kumbh Sans';
+  src: url('./assets/fonts/KumbhSans-Bold.ttf');
+  font-weight: 700;
+}
 *{
+  font-family: 'Kumbh Sans', monospace;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; 
+}
 body{
   @include flexContent(center, center, column);
   height: 100vh;
   background: linear-gradient($soft-violet, $soft-blue);
+  color: $default-color;
+  position: relative;
 }

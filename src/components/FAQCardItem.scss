@@ -1,0 +1,39 @@
+@import '../assets/css/utils.scss';
+
+.faq-item{
+    width: 90%;
+    padding: 20px 0;
+    border-bottom: 1px solid $dividers-color;
+    .toggle{
+        display: none;
+        &:checked ~ .answer{
+            display: inline-block;
+        }
+        &:checked ~ .question{
+            font-weight: 700;
+            color: $title-color; 
+        }
+        &:checked ~ .question > .arrow-icon{
+            animation: rotate 100ms linear;
+            transform: rotate(180deg); 
+        }
+    }
+    .question{
+        @include flexContent(center,space-between, row);
+        &:hover{
+            cursor: pointer;
+            color: $hover-color; 
+        }
+    }
+    .answer{
+        display: none;
+        color: $secondary-color;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    
+}
+@keyframes rotate {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(180deg);}
+}
