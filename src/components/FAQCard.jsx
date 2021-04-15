@@ -35,9 +35,9 @@ export default props => {
 		return (
 		<div className="faq-wrapper">
 			<div className="faq-img-wrapper">
-				<div className="main-img"><MainIMG ></MainIMG></div>
-				<div className="main-img-mobile"><MainIMGMobile ></MainIMGMobile></div>
-				<div className="box-img"><img src={box}></img></div>
+				<div className="main-img"><MainIMG alt="Illustration of a woman looking at a big screen."></MainIMG></div>
+				<div className="main-img-mobile"><MainIMGMobile alt="Illustration of a woman looking at a big screen."></MainIMGMobile></div>
+				<div className="box-img"><img src={box} alt=""></img></div>
 			</div>
 			 <div className="faq-list">
 				<h1>FAQ</h1>
@@ -49,3 +49,4 @@ export default props => {
 		</div>
 		)
 }
+
